@@ -5,7 +5,7 @@ import xml.etree.ElementTree as ET         #for xml reading
 
 
 
-# four steps need to falllow by the user
+# four steps need to follow by the user
 # step 1 name of the xml file 
 # step 2 ^^^(number of files + 1 )^^^ in the range
 # step 3 number of values that is number of files
@@ -2274,4 +2274,5 @@ new_wb.save(output_file)
 
 print(f"Data from both files have been combined and saved to this folder suceessfully  {output_file}.")
 print("successfully code was completed")
+
 
