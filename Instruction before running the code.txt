@@ -1,0 +1,39 @@
+Instructions for Running the Automated Python Script:
+
+Update File Paths:
+Before running the script on a different PC, update all relevant file paths:
+
+1.Set the correct path for GeoCmd.exe.
+2.Update the path where the Excel file (containing material property values) is located.
+3.Ensure output directories such as xmlfiles are correctly defined.
+
+Excel File Configuration:
+The script reads material properties directly from the Excel file. Ensure that:
+
+1.The Excel file is located at the specified path.
+2.The data format and structure in the Excel file remain consistent.
+
+Access XML Model File Generation:
+
+1.The XML model file must be generated first before the simulation begins.
+2.This model defines the geometry and structure of the system.
+3.The script uses this XML template and continuously updates it with material properties read from the Excel file for each iteration.
+
+Mesh File Requirement:
+1.Before executing the script, ensure that the required mesh file is present in the xmlfiles directory. The simulation cannot run without this mesh.
+
+Output Directory Setup:
+
+1.Ensure the xmlfiles folder is created inside the output directory.
+2.This folder will store all the intermediate XML files used in the simulation.
+
+Output Generation:
+Once the script is run, it will:
+
+1.Continuously generate multiple XML input files, each updated with different sets of material properties from the Excel file.
+2.Execute these XML files to run simulations using GeoCmd.exe.
+3.Automatically generate and save the corresponding output results in Excel format within the specified output directory.
+
+
+
+
